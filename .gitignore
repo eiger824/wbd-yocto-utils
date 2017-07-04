@@ -1,0 +1,7 @@
+bitbake*
+tmp
+*cache
+
+conf/local.conf.sample
+conf/sanity_info
+conf/templateconf.cfg
