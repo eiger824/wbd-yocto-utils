@@ -44,7 +44,7 @@ read foo
 
 
 echo "Extracting rootfs ($(eval echo $IMG | sed -e 's/sdcard/tar\.bz2/g'))"
-#sudo tar xjf "$(eval echo $IMG | sed -e 's/sdcard/tar\.bz2/g')" -C /nfs-server/
+sudo tar xjf "$(eval echo $IMG | sed -e 's/sdcard/tar\.bz2/g')" -C /nfs-server/
 
 while true
 do
@@ -54,7 +54,7 @@ do
 		y|Y)
 			echo "Under implementation..."
 			;;
-		n|N)
+		n|N|"")
 			echo "Skipping ..."
 			break
 			;;
@@ -72,7 +72,7 @@ do
                 y|Y)
                         echo "Under implementation..."
                         ;;
-                n|N)
+                n|N|"")
                         echo "Skipping ..."
                         break
                         ;;

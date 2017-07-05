@@ -58,8 +58,6 @@ do
 	fi
 done
 
-echo "IMG ARRAY: [$IMGS]"
-
 IMG=$(eval echo $IMGS | cut -d"," -f$c)
 echo -n "About to copy [$IMG] to SD card, enter any key "
 read foo
